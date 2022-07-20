@@ -2,4 +2,7 @@
 	email = emaildejuanca@gmail.com
 	name = Juanca
 [core]
-	editor = nvim
+	editor = nvimo
+	autocrlf = true
+[credential]
+	helper = store --file ~/.dotfiles/.config/git/credenciales
