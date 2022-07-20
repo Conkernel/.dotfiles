@@ -3,4 +3,6 @@ Si al hacer un
 git config --global user.name "Juanca"
 y un 
 git config --global user.email emaildejuanca@gmail.com
-, no encuentra ninguno de los dos ficheros del "home" personal, por defecto creará un fichero en ~/.gitconfig. Basta con mover ese fichero a ~/.config/git/ y a partir de entonces todas las configuraciones de ámbito --global las escribirá y leerá en .config/git/config
+, no encuentra ninguno de los dos ficheros del "home" personal, por defecto creará un fichero en ~/.gitconfig.
+Basta con mover ese fichero a ~/.config/git/ y a partir de entonces todas las configuraciones
+ de ámbito --global las escribirá y leerá en .config/git/config
