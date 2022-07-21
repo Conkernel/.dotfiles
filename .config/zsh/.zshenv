@@ -1,5 +1,5 @@
 # set the amazing ZDOTDIR variable
-export ZDOTDIR=~/.config/zsh
+export ZDOTDIR="~/.config/zsh"
 
 
 export XDG_CONFIG_HOME="$HOME/.config"
