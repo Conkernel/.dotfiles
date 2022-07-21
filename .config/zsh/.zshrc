@@ -9,4 +9,8 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+
+
+source $HOME/.config/zsh/.zshenv
+source $HOME/.config/zsh/.zprofile
 source $HOME/.config/zsh/.aliases
