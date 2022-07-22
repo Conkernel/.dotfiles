@@ -16,8 +16,13 @@ bindkey -e
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/oloco/.zshrc'
 
-autoload -Uz compinit
+
+autoload -Uz compinit promptinit
 compinit
+promptinit
+prompt walters
+
+
 # End of lines added by compinstall
 
 # Use powerline
@@ -26,21 +31,27 @@ USE_POWERLINE="true"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-    typeset -A key
-    key=(
-        BackSpace  "${terminfo[kbs]}"
-        Home       "${terminfo[khome]}"
-        End        "${terminfo[kend]}"
-        Insert     "${terminfo[kich1]}"
-        Delete     "${terminfo[kdch1]}"
-        Up         "${terminfo[kcuu1]}"
-        Down       "${terminfo[kcud1]}"
-        Left       "${terminfo[kcub1]}"
-        Right      "${terminfo[kcuf1]}"
-        PageUp     "${terminfo[kpp]}"
-        PageDown   "${terminfo[knp]}"
-    )
 
+#KEYS
+
+autoload -Uz up-line-or-beginning-search
+autoload -Uz down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+bindkey '^?'      backward-delete-char          # bs         delete one char backward
+bindkey '^[[3~'   delete-char                   # delete     delete one char forward
+bindkey '^[[H'    beginning-of-line             # home       go to the beginning of line
+bindkey '^[[F'    end-of-line                   # end        go to the end of line
+bindkey '^[[1;5C' forward-word                  # ctrl+right go forward one word
+bindkey '^[[1;5D' backward-word                 # ctrl+left  go backward one word
+bindkey '^H'      backward-kill-word            # ctrl+bs    delete previous word
+bindkey '^[[3;5~' kill-word                     # ctrl+del   delete next word
+bindkey '^J'      backward-kill-line            # ctrl+j     delete everything before cursor
+bindkey '^[[D'    backward-char                 # left       move cursor one char backward
+bindkey '^[[C'    forward-char                  # right      move cursor one char forward
+#bindkey '^[[A'    up-line-or-beginning-search   # up         prev command in history
+#bindkey '^[[B'    down-line-or-beginning-search # down       next command in history
 
 source $HOME/.config/zsh/.zshenv
 source $HOME/.config/zsh/.zprofile
