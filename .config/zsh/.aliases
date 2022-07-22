@@ -7,7 +7,10 @@ alias gtdr='git tag --delete origin'
 alias gr='git branch -r'
 alias gplo='git pull origin'
 alias gb='git branch '
+
 alias gc='git commit'
+alias gcam='git commit -am'
+
 alias gd='git diff'
 alias gco='git checkout '
 alias gl='git log'
