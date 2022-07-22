@@ -16,6 +16,9 @@ bindkey -e
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/oloco/.zshrc'
 
+ZSH_THEME="bira"
+
+source ~/powerlevel10k/powerlevel10k.zsh-theme 
 
 autoload -Uz compinit promptinit
 compinit
