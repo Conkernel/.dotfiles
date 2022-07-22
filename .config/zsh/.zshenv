@@ -1,11 +1,12 @@
 # set the amazing ZDOTDIR variable
+
+PATH=/home/oloco/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:$PATH
 export ZDOTDIR="~/.config/zsh"
 
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
 export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
-export XD_TEST="juanca"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
