@@ -12,7 +12,11 @@ alias gplo='git pull origin'
 alias gb='git branch '
 
 alias gc='git commit'
-alias gcam='git commit -am $1'
+
+#Función/alias para gitall
+function gitall() {git add .; git commit -m "$*"; git push }
+#alias gcam="git commit -am '$1'"
+
 
 alias gd='git diff'
 alias gco='git checkout '
