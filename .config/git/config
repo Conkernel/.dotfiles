@@ -6,4 +6,4 @@
 [credential]
 	helper = store --file ~/.dotfiles/.config/git/credenciales
 [alias]
-	ncommit = commit -a --allow-empty-message -m \"\"
+#	ncommit = commit -a --allow-empty-message -m \"\"
