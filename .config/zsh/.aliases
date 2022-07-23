@@ -1,3 +1,6 @@
+#
+
+alias gkey='echo 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'
 alias gs='git status'
 alias ga='git add'
 alias gp='git push'
@@ -9,7 +12,7 @@ alias gplo='git pull origin'
 alias gb='git branch '
 
 alias gc='git commit'
-alias gcam='git commit -am'
+alias gcam='git commit -am $1'
 
 alias gd='git diff'
 alias gco='git checkout '
