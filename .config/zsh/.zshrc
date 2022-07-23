@@ -32,7 +32,7 @@ prompt walters
 USE_POWERLINE="true"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 
 #KEYS
@@ -55,6 +55,8 @@ bindkey '^[[D'    backward-char                 # left       move cursor one cha
 bindkey '^[[C'    forward-char                  # right      move cursor one char forward
 #bindkey '^[[A'    up-line-or-beginning-search   # up         prev command in history
 #bindkey '^[[B'    down-line-or-beginning-search # down       next command in history
+
+(( ! ${+functions[p10k]} )) || p10k finalize
 
 source $HOME/.config/zsh/.zshenv
 source $HOME/.config/zsh/.zprofile
