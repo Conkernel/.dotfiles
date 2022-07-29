@@ -11,6 +11,10 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
+# Locales
+export LANG=es_ES.UTF-8
+export LANGUAGE=es_ES.UTF-8
+export LC_ALL=es_ES.UTF-8
 
 #[[ -d $HOME/.zhistory ]] && mkdir $HOME/tmp && mv $HOME/.zhistory  $HOME/tmp/.zhistory && export HISTFILE="$HOME/tmp/.zhistory"
 
