@@ -28,13 +28,21 @@ export LC_TIME="es_ES.UTF-8"
 
 
 # Asignamos la ruta del zhist de ZSH a un directorio tmp del usuario: 
-#[[ -d $HOME/.zhistory ]] && mkdir $HOME/tmp && mv $HOME/.zhistory  $HOME/tmp/.zhistory && export HISTFILE="$HOME/tmp/.zhistory"
+#[[ -f $HOME/.zhistory ]] && mkdir $HOME/.tmp && mv $HOME/.zhistory  $HOME/.tmp/.zhistory && export HISTFILE="$HOME/.tmp/.zhistory"
 
-if  [[ -f $HOME/.zhistory ]]; then
+
+# Si no existe el directorio $HOME/.tmp, lo creamos
+if  [[ ! -d $HOME/.tmp ]]; then
     mkdir $HOME/.tmp
+fi
+
+
+# Si ya existe un $HOME/.zhistory, lo movemos al nuevo directorio $HOME/.tmp
+if  [[ -f $HOME/.zhistory ]]; then
     mv $HOME/.zhistory $HOME/.tmp/.zhistory
     export HISTFILE="$HOME/.tmp/.zhistory"
 else
+    touch $HOME/.tmp/.zhistory
     export HISTFILE="$HOME/.tmp/.zhistory"
 fi
 
