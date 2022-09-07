@@ -1,20 +1,16 @@
 Actualizar mirrors:
-
 sudo pacman -Syy
 
 
 Instalar algunas Apps:
-
 sudo pacman --noconfirm -S git stow lsd bat go neovim p7zip fzf xclip nerd-fonts
 
 
 Instalar Powerlevel10k:
-
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 
 
 .Dotfiles / STOW:
-
 cd ~/
 git clone https://github.com/Conkernel/.dotfiles
 cd .dotfiles
