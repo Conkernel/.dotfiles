@@ -39,7 +39,7 @@ source $HOME/.config/zsh/.zshrc
 
 
 
-# Copiamos dotfiles de .config a /etc/skel de manera que nuevos usuarios "nazcan" con esa configuración incorporada
+ Copiamos dotfiles de .config a /etc/skel de manera que nuevos usuarios "nazcan" con esa configuración incorporada
 
 sudo cp -r $HOME/.dotfiles/.config/ /etc/skel/
 
