@@ -51,14 +51,14 @@ alias nano='nvim'
 ### FUNCIONES ###
 
 function gitall() {
-    if [ "$1" != "" ] # or better, if [ -n "$1" ]
+    if [-n "$1" ] 
         then
-		git add .
-        git commit -m "$1"
-		git push
+		echo "Escribe un commit, anda..."
+		return
         else
-                echo "Escribe un commit, anda..."
-                return
+                git add .
+                git commit -m "$1"
+                git push
         fi
 }
 
