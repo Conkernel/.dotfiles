@@ -54,7 +54,7 @@ function gitall() {
     if [ "$1" != "" ] # or better, if [ -n "$1" ]
         then
 		git add .
-                git commit -m "$1"
+        git commit -m "$1"
 		git push
         else
                 echo "Escribe un commit, anda..."
