@@ -42,6 +42,33 @@ autoload -Uz down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 
+### ALIAS ###
+
+alias nn='nvim'
+alias nano='nvim'
+
+
+### FUNCIONES ###
+
+function gitall() {
+    git add .
+    if [ "$1" != "" ] # or better, if [ -n "$1" ]
+        then
+                git commit -m "$1"
+        else
+                echo "Escribe un commit, anda..."
+                return
+        fi
+    git push
+}
+
+
+
+
+
+
+
+
 bindkey '^?'      backward-delete-char          # bs         delete one char backward
 bindkey '^[[3~'   delete-char                   # delete     delete one char forward
 bindkey '^[[H'    beginning-of-line             # home       go to the beginning of line
