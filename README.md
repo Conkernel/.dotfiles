@@ -17,3 +17,11 @@ Para Zsh, es importante añadir estas líneas al $HOME/.zshrc, de manera que del
   `source $HOME/.config/zsh/.zshrc`
   
 `fi`
+
+
+# Stow #
+cd ~/
+git clone https://github.com/Conkernel/.dotfiles
+cd .dotfiles
+stow -v .config -t ~/.config
+
