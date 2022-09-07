@@ -24,6 +24,8 @@ alias gl='git log'
 alias gr='git remote'
 alias grs='git remote show'
 
+alias nn='nvim'
+
 alias la='lsd -lah'
 alias ll='lsd -l'
 alias cp='cp -iv'
