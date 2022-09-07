@@ -13,10 +13,11 @@ Algunos de los ficheros de configuración de mis sistemas GNU/Lnux. Por el momen
 
 
 == Powerlevel10k ==
+
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 
 
-fi
+
 
 ==== .Dotfiles / STOW ====
 
@@ -37,6 +38,7 @@ if [[ -e $HOME/.config/zsh/.zshrc ]]; then
 
 source $HOME/.config/zsh/.zshrc
 
+fi
 
 
  Copiamos dotfiles de .config a /etc/skel de manera que nuevos usuarios "nazcan" con esa configuración incorporada
