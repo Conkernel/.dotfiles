@@ -45,7 +45,6 @@ zle -N down-line-or-beginning-search
 ### ALIAS ###
 
 alias nn='nvim'
-alias nano='nvim'
 
 
 ### FUNCIONES ###
