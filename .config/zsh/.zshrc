@@ -45,7 +45,7 @@ zle -N down-line-or-beginning-search
 ### ALIAS ###
 
 alias nn='nvim'
-
+alias cc='clear'
 
 ### FUNCIONES ###
 
@@ -61,7 +61,15 @@ function gitall() {
     fi
 }
 
+# Nos lleva al repo de Ansible
+function cdrepos() {
+    cd /mnt/repos/Ansible
+}
 
+ # Nos lleva al directorio de arch
+function cdarch() {
+    cd /mnt/repos/Ansible/Proyectos/arch
+}
 
 
 
