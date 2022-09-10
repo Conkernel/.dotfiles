@@ -1,0 +1,3 @@
+# Para cambiar el modo con o sin numeración de líneas:
+:set number
+
