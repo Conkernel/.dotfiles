@@ -1,3 +1,23 @@
 # Para cambiar el modo con o sin numeración de líneas:
 :set number
 
+# Para añadir mensaje personal al incio de vim (si se abre un fichero directamente, se verá abajo), añadir esta línea en el .vimrc:
+autocmd VimEnter * echo "Mi gran mensaje"
+
+# Los comentarios en vim se usan con " en vez de #
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

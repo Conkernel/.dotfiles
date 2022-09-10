@@ -53,7 +53,19 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
-autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:> foldmethod=indent nofoldenable
-=======
-autocmd FileType yaml setlocal ai ts=2 sw=2 et
-autocmd VimEnter * echo "Esto es mi mensaje personal"
+
+" Esto solo funciona con los ficheros con extensión yaml o yml:
+autocmd FileType yaml,yml setlocal ai ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:> foldmethod=indent nofoldenable
+"autocmd FileType yaml setlocal ai ts=2 sw=2 et
+"
+
+" Mensaje personal al inicio de vim:
+autocmd VimEnter * echo "Para cambiar el modo con o sin numeración de líneas se hace con :set number"
+
+
+set ignorecase
+set number
+set showmatch
+syntax on
+highlight Comment ctermfg=LightCyan
+

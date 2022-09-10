@@ -20,6 +20,7 @@ export MANPAGER='nvim +Man!'
 
 # Locales
 export zshenv="Procesado"
+export LC_ALL="es_ES.UTF-8"
 export LANG="es_ES.UTF-8"
 export LANGUAGE="es_ES.UTF-8"
 export LC_ADDRESS="es_ES.UTF-8"
