@@ -1,6 +1,6 @@
 #
 
-alias gkey='echo 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1~'
+alias gkey='echo ghp_Wl5ShN6CxbdGrZTlp9qDuOKvUfUUmA0B7Iweme'
 alias gs='git status'
 alias ga='git add'
 alias gp='git push'
