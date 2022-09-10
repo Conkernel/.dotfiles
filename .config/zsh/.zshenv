@@ -4,19 +4,30 @@
 # PATH global para el usuario
 PATH=~/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:$PATH
 
+# Para poder confirmar si este fichero ha sido leído a través de source o a través de .zshrc:
+export zshenv="Procesado"
+
 # Set the amazing ZDOTDIR variable and others:
-export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export XDG_CONFIG_HOME="$HOME/.config"
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
 export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
 export EDITOR="nvim"
 export VISUAL="nvim"
-export VIMINIT="source ~/.config/vim/.vimrc"
+
+# VIM #  Por el momento hay que setear el fichero de config de vim manualmente para que lo pueda leer en otro lugar que no sea ~/.vimrc
+#export VIMINIT="source ~/.config/vim/.vimrc"
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/.vimrc" | source $MYVIMRC'
+export VIMDOTDIR="$XDG_CONFIG_HOME/vim"
+
 export HISTSIZE=10000                   # Maximum events for internal history
 export SAVEHIST=10000                   # Maximum events in history file
 export TERM='rxvt-256color'
 export DOTFILES="$HOME/.dotfiles"
 export MANPAGER='nvim +Man!'
+
+# Coloreamos salida de Less:
+export LESS='-R --use-color -Dd+r$Du+b'
 
 # Locales
 export zshenv="Procesado"
