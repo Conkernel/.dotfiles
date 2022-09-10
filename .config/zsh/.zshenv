@@ -1,5 +1,8 @@
+
+## Para copiar/pegar sin tener e cuenta los números de línea: seleccionar usando control + alt o usar :set invnumber. Tb se podría usar :set mouse=a pero es más incómodo
+
 # PATH global para el usuario
-PATH=/home/oloco/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:$PATH
+PATH=~/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:$PATH
 
 # Set the amazing ZDOTDIR variable and others:
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
@@ -8,10 +11,19 @@ export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
 export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
 export EDITOR="nvim"
 export VISUAL="nvim"
+<<<<<<< HEAD
 export VIMINIT="source ~/.config/vim/.vimrc"
+=======
+export HISTSIZE=10000                   # Maximum events for internal history
+export SAVEHIST=10000                   # Maximum events in history file
+export TERM='rxvt-256color'
+export DOTFILES="$HOME/.dotfiles"
+export MANPAGER='nvim +Man!'
+>>>>>>> 786e40f (algunos)
 
 
 # Locales
+export .zshenv="Procesado"
 export LANG="es_ES.UTF-8"
 export LANGUAGE="es_ES.UTF-8"
 export LC_ADDRESS="es_ES.UTF-8"
@@ -26,7 +38,6 @@ export LC_NUMERIC="es_ES.UTF-8"
 export LC_PAPER="es_ES.UTF-8"
 export LC_TELEPHONE="es_ES.UTF-8"
 export LC_TIME="es_ES.UTF-8"
-
 
 
 # Asignamos la ruta del zhist de ZSH a un directorio tmp del usuario: 
@@ -48,8 +59,3 @@ else
     export HISTFILE="$HOME/.tmp/.zhistory"
 fi
 
-export HISTSIZE=10000                   # Maximum events for internal history
-export SAVEHIST=10000                   # Maximum events in history file
-export TERM='rxvt-256color'
-export DOTFILES="$HOME/.dotfiles"
-export MANPAGER='nvim +Man!'

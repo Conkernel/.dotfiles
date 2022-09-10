@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 " All system-wide defaults are set in $VIMRUNTIME/debian.vim and sourced by
 " the call to :runtime you can find below.  If you wish to change any of those
 " settings, you should do it in this file (/etc/vim/vimrc), since debian.vim
@@ -54,3 +55,7 @@ if filereadable("/etc/vim/vimrc.local")
 endif
 
 autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:> foldmethod=indent nofoldenable
+=======
+autocmd FileType yaml setlocal ai ts=2 sw=2 et
+autocmd VimEnter * echo "Esto es mi mensaje personal"
+>>>>>>> 786e40f (algunos)
