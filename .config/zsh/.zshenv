@@ -11,19 +11,15 @@ export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
 export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
 export EDITOR="nvim"
 export VISUAL="nvim"
-<<<<<<< HEAD
 export VIMINIT="source ~/.config/vim/.vimrc"
-=======
 export HISTSIZE=10000                   # Maximum events for internal history
 export SAVEHIST=10000                   # Maximum events in history file
 export TERM='rxvt-256color'
 export DOTFILES="$HOME/.dotfiles"
 export MANPAGER='nvim +Man!'
->>>>>>> 786e40f (algunos)
-
 
 # Locales
-export .zshenv="Procesado"
+export zshenv="Procesado"
 export LANG="es_ES.UTF-8"
 export LANGUAGE="es_ES.UTF-8"
 export LC_ADDRESS="es_ES.UTF-8"
@@ -42,7 +38,6 @@ export LC_TIME="es_ES.UTF-8"
 
 # Asignamos la ruta del zhist de ZSH a un directorio tmp del usuario: 
 #[[ -f $HOME/.zhistory ]] && mkdir $HOME/.tmp && mv $HOME/.zhistory  $HOME/.tmp/.zhistory && export HISTFILE="$HOME/.tmp/.zhistory"
-
 
 # Si no existe el directorio $HOME/.tmp, lo creamos
 if  [[ ! -d $HOME/.tmp ]]; then
