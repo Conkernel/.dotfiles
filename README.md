@@ -24,7 +24,16 @@ cd .dotfiles
 stow -v .config -t ~/.config 
 
 
-Para Zsh, es importante añadir estas líneas al $HOME/.zshrc, de manera que delegue la lectura de ficheros de configuración al directorio .config/zsh local del usuario. Algo así nos valdría: 
+Para Zsh, es importante añadir estas líneas al /etc/zsh/zshenv, de manera que delegue la lectura de ficheros de configuración al directorio .config/zsh local del usuario. Algo así nos valdría: 
+
+
+ZDOTDIR=$HOME/.config/zsh/
+
+A partir de ahora, la config de zsh la leerá desde ese directorio local.
+
+
+
+Si no queremos tocar etc, podemos hacerlo de esta manera, modificando el fichero de config de zsh del usuario para que redireccione a $HOME/.config/zsh/
 
  
 touch $HOME/.zshrc 
