@@ -39,13 +39,22 @@ USE_POWERLINE="true"
 
 autoload -Uz up-line-or-beginning-search
 autoload -Uz down-line-or-beginning-search
+
+
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 
-### ALIAS ###
 
-alias nn='nvim'
-alias cc='clear'
+
+# Para el la cache de autocompletado de zsh, y que no nos llene el home de ficheros.
+
+if ! [[ -d "${XDG_CACHE_HOME/zsh}" ]]; then
+  mkdir "${XDG_CACHE_HOME/zsh}"
+fi
+compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
+
+
+
 
 ### FUNCIONES ###
 
