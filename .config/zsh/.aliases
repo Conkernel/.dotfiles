@@ -1,8 +1,6 @@
 #
 # GIT
-# vieja - alias gkey='echo ghp_Wl5ShN6CxbdGrZTlp9qDuOKvUfUUmA0B7Iweme'
-alias gkey='echo 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'
-# otra key: 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
+alias gkey='echo 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'
 alias gs='git status'
 
 # VARIOS
@@ -12,6 +10,8 @@ alias ll='lsd -lahF'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -i'
+alias ls='ls --color=auto -lahF'
+
 
 #Alias para colorear salida en terminal:
 alias diff='diff --color=auto'
