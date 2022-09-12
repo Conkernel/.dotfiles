@@ -8,7 +8,7 @@ alias gs='git status'
 # VARIOS
 alias cc='clear'
 alias nn='nvim'
-alias ll='lsd -lah'
+alias ll='lsd -lahF'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -i'
