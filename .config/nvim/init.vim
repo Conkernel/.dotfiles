@@ -1,7 +1,11 @@
-" Los cometarios ef este fichero se escriben con doble comilla
+" Los cometarios en este fichero se escriben con doble comilla 
+" Añadimos un mensaje como complemento de ayuda
+autocmd VimEnter * echo 'activar numeración: set number - set nonumber'
+
+
+
+"set mouse=a " Al activarlo, el copia/pega no funciona correctamente
 set cursorline
-set mouse=a
-set paste
 set ignorecase
 set smartcase
 set wrap
@@ -13,7 +17,6 @@ set termguicolors
 set background=light
 colorscheme zellner  " Nombre del tema
 set breakindent
-
 
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
