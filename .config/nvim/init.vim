@@ -1,7 +1,7 @@
-" Los cometarios en este fichero se escriben con doble comilla
-
-set title
-" set mouse=v
+" Los cometarios ef este fichero se escriben con doble comilla
+set cursorline
+set mouse=a
+set paste
 set ignorecase
 set smartcase
 set wrap
@@ -10,11 +10,9 @@ set hidden
 set ignorecase
 set spelllang=es
 set termguicolors
-"set background=light
-"colorscheme zellner  " Nombre del tema
-" set breakindent
-
-" set mouse=a
+set background=light
+colorscheme zellner  " Nombre del tema
+set breakindent
 
 
 set nocompatible            " disable compatibility to old-time vi
@@ -31,7 +29,6 @@ set wildmode=longest,list   " get bash-like tab completions
 set colorcolumn=80 
 filetype plugin indent on   "allow auto-indenting depending on file type
 syntax on                   " syntax highlighting
-" set mouse=a                 " enable mouse click
 set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set cursorline              " highlight current cursorline

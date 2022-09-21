@@ -14,7 +14,13 @@ unsetopt beep extendedglob nomatch notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/oloco/.zshrc'
+zstyle :compinstall filename '~/.config/zsh/.zshrc'
+
+
+# Para que al hacer cd .. + tab nos aparezca el directorio padre "../"
+zstyle ':completion:*' special-dirs true
+autoload -Uz compinit && compinit
+
 
 ZSH_THEME="bira"
 

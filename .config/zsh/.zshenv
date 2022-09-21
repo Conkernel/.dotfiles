@@ -1,13 +1,17 @@
-
 ## Para copiar/pegar sin tener e cuenta los números de línea: seleccionar usando control + alt o usar :set invnumber. Tb se podría usar :set mouse=a pero es más incómodo
+
 
 # PATH global para el usuario
 PATH=~/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:$PATH
 
+
+
 # Para poder confirmar si este fichero ha sido leído a través de source o a través de .zshrc:
 export zshenv="Procesado"
 
-# Set the amazing ZDOTDIR variable and others:
+
+
+# Variables generales:
 export XDG_CONFIG_HOME="$HOME/.config"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
@@ -15,14 +19,8 @@ export XDG_CACHE_HOME="$XDG_CONFIG_HOME/.cache"
 export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/.zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
 export EDITOR="nvim"
 export VISUAL="nvim"
-
-# VIM #  Por el momento hay que setear el fichero de config de vim manualmente para que lo pueda leer en otro lugar que no sea ~/.vimrc
-#export VIMINIT="source ~/.config/vim/.vimrc"
-export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/.vimrc" | source $MYVIMRC'
-export VIMDOTDIR="$XDG_CONFIG_HOME/vim"
-
-export HISTSIZE=10000                   # Maximum events for internal history
-export SAVEHIST=10000                   # Maximum events in history file
+export HISTSIZE=10000
+export SAVEHIST=10000
 export TERM='rxvt-256color'
 export DOTFILES="$HOME/.dotfiles"
 export MANPAGER='nvim +Man!'
@@ -31,7 +29,6 @@ export MANPAGER='nvim +Man!'
 export LESS='-R --use-color -Dd+r$Du+b'
 
 # Locales
-export zshenv="Procesado"
 export LC_ALL="es_ES.UTF-8"
 export LANG="es_ES.UTF-8"
 export LANGUAGE="es_ES.UTF-8"
