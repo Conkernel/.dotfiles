@@ -10,7 +10,6 @@ PATH=~/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/us
 export zshenv="Procesado"
 
 
-
 # Variables generales:
 export XDG_CONFIG_HOME="$HOME/.config"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
@@ -21,7 +20,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export HISTSIZE=10000
 export SAVEHIST=10000
-export TERM='rxvt-256color'
+export TERM="screen-256color"
 export DOTFILES="$HOME/.dotfiles"
 export MANPAGER='nvim +Man!'
 

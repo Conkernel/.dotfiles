@@ -32,8 +32,8 @@ alias pacrr='sudo pacman -Rs'           # remove package with unused dependencie
 
 
 # ATAJOS
-alias dot="$HOME/.dotfiles"
-
+alias dot='cd $HOME/.dotfiles'
+alias conf='cd $HOME/.config'
 # Dirstack
 alias ccd='dirs -v'
 
