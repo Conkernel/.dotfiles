@@ -14,6 +14,8 @@ g.mapleader = ','
 opt.number = true
 opt.relativenumber = true
 
+vim.opt.mouse = 'a'
+
 
 
 opt.mouse = a

@@ -15,10 +15,14 @@
  14
  15 --]]
 
--- Archivo de config básico
-require('settings')
-require('keymaps')
+--      Archivo de config básico
+vim.opt.mouse = 'a'
+-- Importamos módulos Lua:
 
+require('settings') ---------------------------- Settings
+require('keymaps') ----------------------------- Keymaps
+require('plugins/packer')-------------------- Plugin manmager
+-- require('plugins/ayu')----------------------- Tema de color
 
 
 -- Plugins
